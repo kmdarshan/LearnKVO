@@ -17,8 +17,8 @@
 		B06188EA174CA44F0015FB60 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B06188E9174CA44F0015FB60 /* Default@2x.png */; };
 		B06188EC174CA4500015FB60 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B06188EB174CA4500015FB60 /* Default-568h@2x.png */; };
 		B06188EF174CA4500015FB60 /* rdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B06188EE174CA4500015FB60 /* rdViewController.m */; };
-		B06188F2174CA4500015FB60 /* rdViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06188F0174CA4500015FB60 /* rdViewController_iPhone.xib */; };
-		B06188F5174CA4500015FB60 /* rdViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06188F3174CA4500015FB60 /* rdViewController_iPad.xib */; };
+		B06188FD174CA50B0015FB60 /* BankObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B06188FC174CA50B0015FB60 /* BankObject.m */; };
+		B0618900174CA5200015FB60 /* PersonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B06188FF174CA51F0015FB60 /* PersonObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +37,10 @@
 		B06188EB174CA4500015FB60 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B06188ED174CA4500015FB60 /* rdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rdViewController.h; sourceTree = "<group>"; };
 		B06188EE174CA4500015FB60 /* rdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rdViewController.m; sourceTree = "<group>"; };
-		B06188F1174CA4500015FB60 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/rdViewController_iPhone.xib; sourceTree = "<group>"; };
-		B06188F4174CA4500015FB60 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/rdViewController_iPad.xib; sourceTree = "<group>"; };
+		B06188FB174CA50B0015FB60 /* BankObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankObject.h; sourceTree = "<group>"; };
+		B06188FC174CA50B0015FB60 /* BankObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankObject.m; sourceTree = "<group>"; };
+		B06188FE174CA51F0015FB60 /* PersonObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonObject.h; sourceTree = "<group>"; };
+		B06188FF174CA51F0015FB60 /* PersonObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,10 +89,12 @@
 			children = (
 				B06188E4174CA44F0015FB60 /* rdAppDelegate.h */,
 				B06188E5174CA44F0015FB60 /* rdAppDelegate.m */,
+				B06188FB174CA50B0015FB60 /* BankObject.h */,
+				B06188FC174CA50B0015FB60 /* BankObject.m */,
+				B06188FE174CA51F0015FB60 /* PersonObject.h */,
+				B06188FF174CA51F0015FB60 /* PersonObject.m */,
 				B06188ED174CA4500015FB60 /* rdViewController.h */,
 				B06188EE174CA4500015FB60 /* rdViewController.m */,
-				B06188F0174CA4500015FB60 /* rdViewController_iPhone.xib */,
-				B06188F3174CA4500015FB60 /* rdViewController_iPad.xib */,
 				B06188DC174CA44F0015FB60 /* Supporting Files */,
 			);
 			path = LearnKVO;
@@ -166,8 +170,6 @@
 				B06188E8174CA44F0015FB60 /* Default.png in Resources */,
 				B06188EA174CA44F0015FB60 /* Default@2x.png in Resources */,
 				B06188EC174CA4500015FB60 /* Default-568h@2x.png in Resources */,
-				B06188F2174CA4500015FB60 /* rdViewController_iPhone.xib in Resources */,
-				B06188F5174CA4500015FB60 /* rdViewController_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +183,8 @@
 				B06188E2174CA44F0015FB60 /* main.m in Sources */,
 				B06188E6174CA44F0015FB60 /* rdAppDelegate.m in Sources */,
 				B06188EF174CA4500015FB60 /* rdViewController.m in Sources */,
+				B06188FD174CA50B0015FB60 /* BankObject.m in Sources */,
+				B0618900174CA5200015FB60 /* PersonObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,22 +197,6 @@
 				B06188DF174CA44F0015FB60 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		B06188F0174CA4500015FB60 /* rdViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B06188F1174CA4500015FB60 /* en */,
-			);
-			name = rdViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		B06188F3174CA4500015FB60 /* rdViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B06188F4174CA4500015FB60 /* en */,
-			);
-			name = rdViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -10,4 +10,7 @@
 
 @implementation PersonObject
 
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
+    NSLog(@"inside person object observer ");
+}
 @end

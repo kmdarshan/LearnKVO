@@ -10,4 +10,5 @@
 
 @interface BankObject : NSObject
 
+@property (nonatomic, assign) int balance;
 @end

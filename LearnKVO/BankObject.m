@@ -7,7 +7,8 @@
 //
 
 #import "BankObject.h"
+#import "PersonObject.h"
 
 @implementation BankObject
-
+@synthesize balance;
 @end

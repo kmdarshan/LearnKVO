@@ -7,8 +7,13 @@
 //
 
 #import "rdViewController.h"
+#import "PersonObject.h"
+#import "BankObject.h"
 
-@interface rdViewController ()
+@interface rdViewController () {
+    PersonObject *pobj;
+    BankObject *bobj;
+}
 
 @end
 
@@ -18,8 +23,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    pobj = [[PersonObject alloc] init];
+    bobj = [[BankObject alloc] init];
+    [bobj addObserver:pobj forKeyPath:@"balance" options:NSKeyValueObservingOptionNew context:NULL];
 }
 
+-(void)viewDidAppear:(BOOL)animated {
+    [bobj setBalance:120];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
